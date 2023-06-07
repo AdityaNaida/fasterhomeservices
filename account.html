@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Faster Home Services Account page for user details filled up like images, name, number and address">
+  <title>Account</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--================== Navigation of the account page===================== -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html" class="home-btn"><i class="bi bi-house-door-fill"></i> Home</a></li>
+      <li><a href="bookings.html" class="bookings-btn"><i class="bi bi-journal-text"></i> Bookings</a></li>
+      <li><a href="help.html" class="help-btn"><i class="bi bi-headset"></i> Help</a></li>
+      <li><a href="account.html" class="account-btn" style="color:#77468f"><i class="bi bi-person-fill"></i> Account</a>
+      </li>
+    </ul>
+    <div class="animation start-home"></div>
+  </nav>
+
+  <div class="user-profile">
+    <!--====================== Account Page Heading ===============-->
+    <div class="user-profile-heading">
+      <a href="services.html"><i class="bi bi-chevron-left"></i></a>
+      <h2>Profile</h2>
+    </div>
+    <!-- ====================User Profile Details======================  -->
+    <div class="user-profile-details">
+      <div class="user-picture-name">
+        
+        <img src="images/profile-min.png" id="profile-pic" loading="lazy" decoding="async">
+     
+        <div class="user-name">
+          <h3 id="displayed-name">UserName</h3>
+          <p>@<small id="small-name">username</small></p>
+          <p class="display-address">Address: <big id="user-address"></big></p>
+          <h4>Number: <big id="user-number"></big></h4>
+        </div>
+      </div>
+      <!-- ========================Edit Name and Pic Section ==============-->
+      <div class="edit-profile">
+        <div class="user-icon">
+          <i class="bi bi-person-fill"></i>
+        </div>
+        <h4>Edit Name & Pic</h4>
+        <i class="bi bi-chevron-right" onclick="editFunction()"></i>
+      </div>
+      <!-- =======================Upload Picture Section================== -->
+      <div class="upload-picture">
+          <label for="input-file">Upload Image</label>
+          <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+            <!-- ===================Update Name============================ -->
+          <form action="" class="user-name-edit">
+            <input type="text" placeholder="Type Name" required id="userName">
+            <input type="button" value="Save" onclick="saveName()">
+          </form>
+      </div>
+      <!--============================ Edit Address Section==================== -->
+      <div class="user-address">
+        <div class="address-icon">
+          <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <h4>Edit Address</h4>
+        <i class="bi bi-chevron-right" onclick="editAdress()" id="address-show"></i>
+      </div>
+      <!-- =========================== Update Addresss========================== -->
+      <div class="address-edit">
+        <form action="" class="address-editing-save">
+          <input type="text" placeholder="Type Address" id="typed-address">
+          <input type="button" value="Save" onclick="saveAddress()">
+        </form>
+      </div>
+      <!--============================ Edit Phone Number Section==================== -->
+
+      <div class="user-number">
+        <div class="number-icon">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+        <h4>Edit Phone Number</h4>
+        <i class="bi bi-chevron-right" onclick="editNumber()" id="number-show"></i>
+      </div>
+      <!--============================ Update Phone Number==================== -->
+
+      <div class="number-edit">
+        <form action="" class="number-editing-save">
+          <input type="number" placeholder="Type Number" id="typed-number">
+          <input type="button" value="Save" onclick="saveNumber()">
+        </form>
+      </div>
+
+   <!-- ============================Logout Button====================== -->
+      <div class="logout">
+        <button type="button"><i class="bi bi-box-arrow-right"></i>Log Out</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- =============================JavaScript Of Account Page===================== -->
+  <script>
+    //====================Display profile piture =================
+
+    let profilePic = document.getElementById('profile-pic');
+    let inputFile = document.getElementById('input-file');
+
+
+    inputFile.onchange = function () {
+      profilePic.src = URL.createObjectURL(inputFile.files[0]);
+    }
+
+    //=====================edit profile pic and name dropdown ============================
+
+    let edit_container = document.querySelector('.upload-picture');
+    let editPanelOpen = true;
+
+    const editFunction = () => {
+      if (editPanelOpen) {
+        edit_container.style.display = "block";
+        editPanelOpen = false;
+      }
+      else {
+        edit_container.style.display = "none";
+        editPanelOpen = true;
+
+      }
+    }
+    //=====================edit addresss dropdown ============================
+
+    let edit_address = document.querySelector('.address-edit')
+    const editAdress = () => {
+      if (editPanelOpen) {
+        edit_address.style.display = "block";
+        editPanelOpen = false;
+      }
+      else {
+        edit_address.style.display = "none";
+        editPanelOpen = true;
+
+      }
+    }
+
+    //===================================edit number dropdown================================
+    let edit_number = document.querySelector('.number-edit');
+    const editNumber = () => {
+      if (editPanelOpen) {
+        edit_number.style.display = "block";
+        editPanelOpen = false;
+      }
+      else {
+        edit_number.style.display = "none";
+        editPanelOpen = true;
+      }
+    }
+
+
+
+    //============================Save name function=========================
+    const saveName = () => {
+      let userInput = document.querySelector('#userName')
+      let disPlayedName = document.querySelector('#displayed-name');
+      let small_name = document.querySelector('#small-name');
+
+      disPlayedName.innerHTML = userInput.value;
+      small_name.innerHTML = userInput.value;
+
+    }
+
+    //===============================Save addressfunction==========================
+    const saveAddress = () => {
+      let userInputAddress = document.querySelector('#typed-address');
+      let display_Address = document.querySelector('#user-address');
+
+      display_Address.innerHTML = userInputAddress.value;
+    }
+
+
+    //=================================Save Number funtion=============================
+
+    const saveNumber = () => {
+      let userInputNumber = document.querySelector('#typed-number');
+      let display_Number = document.querySelector('#user-number');
+
+      display_Number.innerHTML = userInputNumber.value;
+    }
+
+
+  </script>
+</body>
+
+</html>

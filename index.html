@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Welcome to  Faster Home Service - Your trusted provider of AC repair, refrigerator repair,
+     washing machine repair, geyser repair, RO water purifier repair, chimney repair,
+      DI fridge repair, sofa cleaning, electrical work, microwave repair, and OTG oven
+       repair services in Raipur, Rajasthan. Our expert technicians ensure reliable and prompt 
+       service to keep your appliances and home in top condition. Contact us today for efficient
+        and affordable solutions.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--=============== Header section of Home Page ======================-->
+  <header>
+    <div class="location">
+      <div class="address">
+        <div class="user-location">
+          <article>
+            <p class="static-address"><i class="bi bi-geo-alt-fill"></i>Raipur</p>
+            <p class="user-location-status"></p><button id="gps-btn"><i class="bi bi-chevron-down"></i>
+            </button>
+          </article>
+        </div>
+        <div class="user-location-track">
+          <div class="serach-user-location">
+            <i class="bi bi-x-lg"></i>
+            <input type="text" placeholder="Search for your location/society/apartment">
+          </div>
+          <button class="user-gps-location"><i class="bi bi-bullseye"></i>Use current location</button>
+        </div>
+      </div>
+      <div class="lets-start-popup">
+        <div class="lets-start-image">
+          <picture>
+            <source srcset="images/start-compressed.webp" type="image/webp">
+            <source srcset="images/start-compressed.jpg" type="image/jpg">
+            <img src="images/start-compressed.jpg" alt="Let's start image" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="lets-start-container">
+          <button id="close-started">Lets get started</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-login-option">
+      <div class="cart-login-button">
+        <button class="cart-btn"><i class="bi bi-bag"></i></button>
+        <div class="popup">
+          <div class="close-btn"><i class="bi bi-x"></i></div>
+          <div class="login-page-image">
+            <picture>
+              <source srcset="images/lock-min.webp" type="image/webp">
+              <source srcset="images/lock-min.jpg" type="image/jpg">
+
+              <img src="images/lock-min.png" alt="OTP send image" srcset="" loading="lazy" decoding="async" />
+            </picture>
+          </div>
+          <div class="form">
+            <h2>OTP Verification</h2>
+            <p>We will send you a one-time password to this mobile number</p>
+            <form action="">
+              <div class="form-element">
+                <label for="number" id="number-lable">
+                  <p>Enter Mobile Number</p>
+                </label>
+                <input type="number" id="number" placeholder="Enter Mobile Number" required />
+              </div>
+              <div class="form-element">
+                <input type="button" value="Get OTP" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search">
+      <big id="greeting-msg"></big>
+      <div class="search-box-alignment">
+        <div class="search-box">
+          <input type="text" required placeholder="Search for 'AC service'" />
+          <i class="bi bi-search"></i>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!-- =========================Main section of the home page============ -->
+  <main>
+    <!-- ======================Navigation Bar============================ -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="home-btn" style="color:#77468f"><i class="bi bi-house-door-fill"></i><small
+              class="small-navigation-text">Home</small> </a></li>
+        <li><a href="bookings.html" class="bookings-btn"><i class="bi bi-journal-text"></i> <small
+              class="small-navigation-text">Bookings</small></a></li>
+        <li><a href="help.html" class="help-btn"><i class="bi bi-headset"></i> <small
+              class="small-navigation-text">Help</small></a></li>
+        <li><a href="account.html" class="account-btn"><i class="bi bi-person-fill"></i><small
+              class="small-navigation-text">Account</small> </a></li>
+      </ul>
+      <div class="animation start-home"></div>
+    </nav>
+    <!-- =======================Offers section of the home page==================== -->
+    <section class="offers-section">
+      <h2>Offers</h2>
+      <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slider-img">
+                <picture>
+                  <source srcset="images/microwave-repair-min.webp" type="image/webp">
+                  <source srcset="images/microwave-repair-min.jpg" type="image/jpg">
+                  <img src="images/microwave-repair-min.jpg" alt="Microwave-Repair-offers" srcset="" loading="lazy"
+                    decoding="async" />
+                </picture>
+              </div>
+              <h2><span class="yellow">30%</span>Off</h2>
+              <p>With your first microwave repair booking</p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="images/fridge-repair-min.webp" type="image/webp">
+                <source srcset="images/fridge-repair-min.jpg" type="image/jpg">
+                <img src="images/fridge-repair-min.jpg" alt="Fridge-Repair-offers" srcset="" loading="lazy"
+                  decoding="async" />
+              </picture>
+              <h2><span class="yellow">20%</span>Off</h2>
+              <p>With your first refrigerator repair booking</p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="images/chimney-min.webp" type="image/webp">
+                <source srcset="images/chimney-min.jpg" type="image/jpg">
+                <img src="images/chimney-min.jpg" alt="Chimney-Reapir-offers" srcset="" loading="lazy"
+                  decoding="async" />
+              </picture>
+              <h2><span class="yellow">25%</span>Off</h2>
+              <p>With your first chimney repair booking</p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="images/sofa-cleaning-min.webp" type="image/webp">
+                <source srcset="images/sofa-cleaning-min.jpg" type="image/jpg">
+                <img src="images/sofa-cleaning-min.jpg" alt="Sofa-cleaning-offers" srcset="" loading="lazy"
+                  decoding="async" />
+              </picture>
+              <h2><span class="yellow">27%</span>Off</h2>
+              <p>With your first sofa cleaning booking</p>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="images/AC-repair-min.webp" type="image/webp">
+                <source srcset="images/AC-repair-min.jpg" type="image/jpg">
+                <img src="images/AC-repair-min.jpg" alt="AC-Reparing-offers" srcset="" loading="lazy"
+                  decoding="async" />
+              </picture>
+              <h2><span class="yellow">22%</span>Off</h2>
+              <p>With your first AC repair booking</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- =======================Cart section ========================-->
+    <div class="product-cart">
+      <h2>My Cart</h2>
+      <button class="close-cart-btn"><i class="bi bi-x-lg"></i></button>
+      <div class="cart-container">
+        <div class="selected-service">
+          <div class="product-service">
+            <img src="images/Ac-repair-2-min.jpg" alt="AC Services Added" class="product-img" loading="lazy"
+              decoding="async">
+            <div class="product-name-price">
+              <h3 class="product-name">AC Repair</h3>
+              <h4 class="product-price"><i class="bi bi-currency-rupee"></i>500</h4>
+            </div>
+            <i class="bi bi-trash3"></i>
+          </div>
+          <div class="product-service-2">
+            <img src="images/Geyser-repair-2-min.jpg" alt="Geyser Services Added" class="product-img" loading="lazy"
+              decoding="async">
+            <div class="product-name-price">
+              <h3 class="product-name">Geyser Repair</h3>
+              <h4 class="product-price"><i class="bi bi-currency-rupee"></i>300</h4>
+            </div>
+            <i class="bi bi-trash3" id="delete-cart-product"></i>
+          </div>
+          <a class="product-order" href="confirmdetails.html">Book</a>
+        </div>
+      </div>
+    </div>
+    <!-- ===============================Service categories========================== -->
+    <section class="categories">
+      <h2>Categories</h2>
+      <div class="categories-parent">
+        <!-- <a class="categories-cards">
+          <picture>
+            <source srcset="images/washing-machine-min.webp" type="image/webp">
+            <source srcset="images/washing-machine-min.png" type="image/png">
+          <img src="images/washing-machine-min.png" loading="lazy" decoding="async" alt="Washing Machine Repair"/>
+        </picture>
+          <h3>Washing machine repair</h3>
+        </a> -->
+
+      </div>
+    </section>
+    <!-- ===========================Recomended Section=================================== -->
+    <section class="recomended">
+      <h2>Recommended</h2>
+      <div class="recomended-parent">
+        <!-- <div class="recomended-services">
+          <picture>
+            <source srcset="images/homecleaning-min.webp" type="image/webp">
+            <source srcset="images/homecleaning-min.jpg" type="image/jpg">
+          <img src="images/homecleaning-min.jpg" loading="lazy" decoding="async" alt="Home Cleaning Services"/>
+          </picture>
+          <div class="services-description">
+            <div class="recomended-offers">
+              <div class="services-ratings">
+                <p>
+                  <span class="yellow"><i class="bi bi-star-fill"></i></span>
+                  4.1
+                </p>
+              </div>
+              <div class="services-offers">
+                <p>30% off</p>
+              </div>
+            </div>
+            <div class="service-provider">
+              <h3>Home Cleaning</h3>
+              <p>By Emran Emon</p>
+              <h3><span class="small-font"><i class="bi bi-currency-rupee"></i></span>240<sub
+                  class="small-font">/h</sub></h3>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>

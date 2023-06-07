@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faster Home Services - Confirm Details Page this page includes user
+    inputs like username, user e-mail address, user mobile number, user address, user house number and user area.">
+    <title>Confirm Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- =======================User Details Form============================= -->
+<div class="user-details">
+    <div class="confirm-heading">
+        <a class="back-to-previous-page" href="services.html"><i class="bi bi-chevron-left"></i></a>
+        <h3>Confirm details</h3>
+        <big><i class="bi bi-check-lg"></i></big>
+    </div>
+    <picture>
+        <source srcset="images/confirm-min.webp" type="image/webp">
+        <source srcset="images/confirm-min.jpg" type="image/jpg">
+    <img src="images/confirm-min.jpg" alt="Cofirm Details" srcset="" class="confirm-details-img" loading="lazy" decoding="async">
+</picture>
+    <form action="#" class="user-details-form">
+        <!-- ======================User Name=============================== -->
+        <div class="user-name">
+            <label for="user-name"><p>Receiver Name</p></label>
+            <input type="text" required placeholder="Type name">
+        </div>
+        <!-- ======================User Email=============================== -->
+        <div class="user-email">
+            <label for="user-email"><p>Email</p></label>
+            <input type="email" required placeholder="Type email">
+        </div>
+        <!-- ======================User Number=============================== -->
+        <div class="user-phone-number">
+            <label for="user-number"><p>Phone Number</p></label>
+                <input type="number" required placeholder="Type Number">
+        </div>
+        <!-- ======================User Addresss=============================== -->
+        <div class="user-address">
+            <label for="user-address" class="address-text"><big>Address</big></label>
+        </div>
+        <!-- ======================User Flat,House, Building Number=============================== -->
+        <div class="user-houes">
+            <label for="user-house"><p>Flat, House no, Building, Company,Apartment</p></label>
+            <input type="text" placeholder="Type flat, house no., building, company, apartment" required>
+        </div>
+        <!-- ======================User Area=============================== -->
+        <div class="user-area">
+            <label for="user-area"><p>Area,Street,Sector,Village</p></label>
+            <input type="text" placeholder="Type area,street,sector,village" required>
+        </div>
+        <div class="confirm-details">
+            <input type="button" value="Confirm" id="confirm-details-btn" onclick="bookingPopUp()">
+        </div>
+    </form>
+</div>
+<!-- =================order Page=================== -->
+<div class="order-page">
+    <i class="bi bi-x-lg" onclick="cancleBooking()"></i>
+    <picture>
+    <source srcset="images/booking-page-2-min.webp" type="image/webp">
+        <source srcset="images/booking-page-2-min.jpg" type="image/jpg">
+    <img src="images/booking-page-2-min.jpg" alt="Book Services" srcset="" loading="lazy" decoding="async">
+</picture>
+    <form action="" class="booking-form">
+        <!-- =======================Select Order Timing====================== -->
+        <div class="booking-date">
+            <label for="booking-date">Select Date & Time  <i class="bi bi-arrow-down-circle-fill"></i></label>
+            <input type="datetime-local" id="booking-date">
+        </div>
+        <!-- ======================= Order Boking Button ====================== -->
+        <div class="booking-confirm">
+            <input type="button" value="Book" onclick="ThankYouPopUp()">
+        </div>
+    </form>
+</div>
+<!-- =======================ThankYou Page pop up ===============================-->
+<div class="thank-you-page">
+    <picture>
+        <source srcset="images/thankyou-img-compressed.webp" type="image/webp">
+            <source srcset="images/thankyou-img-compressed.jpg" type="image/jpg">
+    <img src="images/thankyou-img-compressed.jpg" alt="Tnankyou Image" srcset="" loading="lazy" decoding="async">
+    </picture>
+    <h2>Thank You!</h2>
+    <big>Your order is placed succesfully. Please go to order page to manage satatus.</big>
+    <a href="bookings.html">View Order Status</a>
+</div>
+
+<script>
+    //========================Cancle Booking Button====================
+    const cancleBooking=()=>{
+          document.querySelector('.order-page').style.display = "none";
+         }
+      
+         const bookingPopUp=()=>{
+          document.querySelector('.order-page').style.display = "block";
+         }
+         //======================Thankyou Popup button========================
+      
+         const ThankYouPopUp=()=>{
+            document.querySelector('.thank-you-page').style.display = "block";
+         }
+</script>
+</body>
+</html>

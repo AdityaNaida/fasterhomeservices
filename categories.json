@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Washing Machine Repair",
+        "image": "images/washing-machine-min.png",
+        "url": "services.html",
+        "image_webp": "images/washing-machine-min.webp",
+        "alt": "Washing Machine Repair"
+    },
+    {
+        "name": "Chimney Repair",
+        "image": "images/Chimney-min.png",
+        "url": "services.html",
+        "image_webp": "images/Chimney-min-w.webp",
+        "alt": "Chimney Repair"
+    },
+    {
+        "name": "Ro Water purifier Repair",
+        "image": "images/water-purifier-min.png",
+        "url": "services.html",
+        "image_webp": "images/water-purifier-min.webp",
+        "alt": "Ro Water purifier Repair"
+    },
+    {
+        "name": "Sofa Cleaning",
+        "image": "images/sofa-min.png",
+        "url": "services.html",
+        "image_webp": "images/sofa-min-w.webp",
+        "alt": "Sofa Cleaning"
+    },
+    {
+        "name": "Geyser Repair",
+        "image": "images/Geyser-min.png",
+        "url": "services.html",
+        "image_webp": "images/Geyser-min.webp",
+        "alt": "Geyser Repair"
+    },
+    {
+        "name": "AC Repair",
+        "image": "images/air-conditioner-min.png",
+        "url": "services.html",
+        "image_webp": "images/air-conditioner-min.webp",
+        "alt": "AC Repair"
+    },
+    {
+        "name": "Microwave Oven Repair",
+        "image": "images/microwave-min.png",
+        "url": "services.html",
+        "image_webp": "images/microwave-min.webp",
+        "alt": "Microwave Oven Repair"
+    },
+    {
+        "name": "Electrical Work",
+        "image": "images/electrical-circuit-min.png",
+        "url": "services.html",
+        "image_webp": "images/electrical-circuit-min.webp",
+        "alt": "Electrical Work"
+    },
+    {
+        "name": "Refrigerator Repair",
+        "image": "images/Refrigerator-min.png",
+        "url": "services.html",
+        "image_webp": "images/Refrigerator-min.webp",
+        "alt": "Refrigerator Repair"
+    },
+    {
+        "name": "Di fridge Repair",
+        "image": "images/DI-Fridge-min.png",
+        "url": "services.html",
+        "image_webp": "images/DI-Fridge-min.webp",
+        "alt": "Di fridge Repair"
+    },
+    {
+        "name": "OTG Oven Repair",
+        "image": "images/OTG-oven-min.png",
+        "url": "services.html",
+        "image_webp": "images/OTG-oven-min.webp",
+        "alt": "OTG Oven Repair"
+    }
+]

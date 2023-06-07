@@ -1,0 +1,60 @@
+[{
+    "name":"Home Cleaning",
+    "service_providor": "By Emran Emon",
+    "price":240,
+    "offer": "30% off",
+    "rating": 4.1,
+    "image": "images/homecleaning-min.jpg",
+    "image_webp": "images/homecleaning-min.webp",
+    "alt": "Home Cleaning Services"
+},
+{
+    "name":"Kitchen Cleaning",
+    "service_providor": "By Jessica William",
+    "price":200,
+    "offer": "27% off",
+    "rating": 4,
+    "image": "images/kitchen-cleaning-min.jpg",
+    "image_webp": "images/kitchen-cleaning-min.webp",
+    "alt": "Kitchen Cleaning Services"
+},
+{
+    "name":"Sofa Cleaning",
+    "service_providor": "By John Doe",
+    "price":300,
+    "offer": "20% off",
+    "rating": 4.5,
+    "image": "images/sofa-min.jpg",
+    "image_webp": "images/sofa-min.webp",
+    "alt": "Sofa Cleaning Services"
+},
+{
+    "name":"Chimney repair",
+    "service_providor": "By Imrah Tahir",
+    "price":350,
+    "offer": "25% off",
+    "rating": 4.1,
+    "image": "images/chimney-min.jpg",
+    "image_webp": "images/chimney-min.webp",
+    "alt": "Chimney Repair Services"
+},
+{
+    "name":"Microwave Repair",
+    "service_providor": "By Darrel",
+    "price":250,
+    "offer": "30% off",
+    "rating": 4.3,
+    "image": "images/microwave-repair-min.jpg",
+    "image_webp": "images/microwave-repair-min.webp",
+    "alt": "Microwave Repair Services"
+},
+{
+    "name":"Fridge repair",
+    "service_providor": "By Harry Doe",
+    "price":450,
+    "offer": "33% off",
+    "rating": 4.7,
+    "image": "images/fridge-repair-min.jpg",
+    "image_webp": "images/fridge-repair-min.webp",
+    "alt": "Fridge Repair Services"
+}]
